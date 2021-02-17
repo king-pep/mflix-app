@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.ConnectionTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.025 s <<< FAILURE! - in mflix.api.daos.ConnectionTest
+testConnectionFindsDatabase(mflix.api.daos.ConnectionTest)  Time elapsed: 4.714 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [listDatabases] on [admin.]' on server mflix-shard-00-01.efevc.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [listDatabases] on [admin.]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.api.daos.ConnectionTest.testConnectionFindsDatabase(ConnectionTest.java:52)
+
